@@ -11,7 +11,9 @@ TEST_CASE("Ex1 ", "[example]")
 	int length;
 	int num;
 	length = makeDB(people);
+	cout << people[2][3] << endl;
 	REQUIRE(length == 100);
+	REQUIRE(strcmp(people[2][3], "Travis") == 0);
 	printRecord(people, length);
 	cout << "--------------------------------------------------\n";
 	printEmail(people, length);
